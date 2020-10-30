@@ -27,6 +27,6 @@ jobs:
           push: true
           tags: okteto/golang:1
           context: .
-          file: .golang/Dockerfile
+          file: ./golang/Dockerfile
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
